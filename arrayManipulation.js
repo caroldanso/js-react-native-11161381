@@ -5,3 +5,18 @@ function processArray(arr) {
 }
 
 module.exports = { processArray };
+
+
+// formatArrayStrings
+
+function formatArrayStrings(stringsArr, numbersArr) {
+    return stringsArr.map((str, index) => {
+        if (numbersArr[index] % 2 === 0) {
+            return str.toUpperCase();
+        } else {
+            return str.toLowerCase();
+        }
+    });
+}
+
+module.exports = { processArray, formatArrayStrings };
